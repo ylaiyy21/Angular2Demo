@@ -9,22 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var forms_1 = require('@angular/forms');
-var login_component_1 = require('./login.component');
-var list_component_1 = require('./list.component');
-var AppModule = (function () {
-    function AppModule() {
+var MainComponent = (function () {
+    function MainComponent() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-            declarations: [login_component_1.LoginComponent, list_component_1.ListComponent],
-            bootstrap: [login_component_1.LoginComponent]
+    MainComponent = __decorate([
+        core_1.Component({
+            selector: 'my-app',
+            template: "\n\t\t<nav>\n\t\t\t<a [routerLink]=\"['/page1', 1]\">page1</a>\n\t        <a routerLink=\"/page2\">page2</a>\n        </nav>\n        <router-outlet></router-outlet>\n    "
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], MainComponent);
+    return MainComponent;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.MainComponent = MainComponent;
+//# sourceMappingURL=main.component.js.map

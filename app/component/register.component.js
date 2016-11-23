@@ -9,19 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var ListComponent = (function () {
-    function ListComponent() {
-        this.heros = Heros;
+var RegitCompoent = (function () {
+    function RegitCompoent() {
     }
-    ListComponent = __decorate([
+    RegitCompoent = __decorate([
         core_1.Component({
-            selector: 'login-list',
-            template: "\n    \t\t<ul *ngFor=\"let hero of heros\">\n    \t\t\t<li>{{hero.code}}</li>\n    \t\t</ul>\n    \t\t",
-            styles: ["\n   \t\t.input_center{\n   \t\t\talign:center;\n   \t\t\tbackground-color: #CFD8DC !important;\n   \t\t}\n   \t\t.btn{\n   \t\t\twidth:100px;\n   \t\t\theight:20px;\n   \t\t\tbackground-color:red;\n   \t\t}\n   \t"]
+            selector: 'regit-list',
+            template: "<h1>\u6CE8\u518C</h1>"
         }), 
         __metadata('design:paramtypes', [])
-    ], ListComponent);
-    return ListComponent;
+    ], RegitCompoent);
+    return RegitCompoent;
 }());
-exports.ListComponent = ListComponent;
-//# sourceMappingURL=list.component.js.map
+exports.RegitCompoent = RegitCompoent;
+//# sourceMappingURL=register.component.js.map
